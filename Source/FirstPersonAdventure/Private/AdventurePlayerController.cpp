@@ -1,11 +1,9 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
 
-
-#include "FirstPersonAdventurePlayerController.h"
+#include "FirstPersonAdventure/Public/AdventurePlayerController.h"
 #include "EnhancedInputSubsystems.h"
 #include "Engine/LocalPlayer.h"
 
-void AFirstPersonAdventurePlayerController::BeginPlay()
+void AAdventurePlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -16,3 +14,4 @@ void AFirstPersonAdventurePlayerController::BeginPlay()
 		Subsystem->AddMappingContext(InputMappingContext, 0);
 	}
 }
+
